@@ -1,0 +1,21 @@
+{
+    "root": true,
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "env": {
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "overrides": [
+      {
+        "files": ["*"],
+        "rules": {
+          "@typescript-eslint/no-non-null-assertion": "off",
+          "@typescript-eslint/no-non-null-asserted-optional-chain": "off"
+        }
+      }
+    ]
+  }
