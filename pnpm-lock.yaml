@@ -10,7 +10,7 @@ specifiers:
   '@faker-js/faker': ^8.4.1
   '@types/node': ^18.17.1
   '@types/react': ^18.3.3
-  '@unifygtm/intent-client': ^0.1.9
+  '@unifygtm/intent-client': ^0.1.13
   babel-core: ^7.0.0-bridge.0
   esbuild: ^0.17.19
   prettier: ^3.2.5
@@ -19,7 +19,7 @@ specifiers:
   typescript: ^5.4.5
 
 dependencies:
-  '@unifygtm/intent-client': 0.1.9
+  '@unifygtm/intent-client': 0.1.13
 
 devDependencies:
   '@babel/cli': 7.24.6_@babel+core@7.24.6
@@ -1599,8 +1599,8 @@ packages:
       csstype: 3.1.3
     dev: true
 
-  /@unifygtm/intent-client/0.1.9:
-    resolution: {integrity: sha512-AujPEpfYwVz5GvrcYoWuuUVyrM6VyeGcaD9i8Zi3iBsFNLrP5KBLQRZEIKQSZ8uObrrwT8HOF/d0QeZUi9jedQ==}
+  /@unifygtm/intent-client/0.1.13:
+    resolution: {integrity: sha512-FdEoQHMwCaQb77AcYTRw20SlAfab7DSQfxXBLrllFFThHDBmmKhByXglKeQYgC0lF8QOPKogBz+U1qmmwZWq7Q==}
     dependencies:
       js-base64: 3.7.7
       js-cookie: 3.0.5

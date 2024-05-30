@@ -1,4 +1,6 @@
-export { UnifyIntentClientConfig } from '@unifygtm/intent-client';
+import * as UnifyIntentClient from '@unifygtm/intent-client';
 
-export * from './UnifyIntentProvider';
-export * from './useUnifyIntent';
+export type UnifyIntentClientConfig = UnifyIntentClient.UnifyIntentClientConfig;
+
+export { default as UnifyIntentProvider } from './UnifyIntentProvider';
+export { default as useUnifyIntent } from './useUnifyIntent';

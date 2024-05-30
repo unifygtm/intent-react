@@ -1,9 +1,5 @@
-/// <reference types="react" />
-import useUnifyIntent from './useUnifyIntent';
-export { UnifyIntentClientConfig } from '@unifygtm/intent-client';
-declare const _default: {
-    UnifyIntentProvider: ({ children, writeKey, config, }: import("./UnifyIntentProvider").UnifyIntentProviderProps) => import("react").JSX.Element;
-    useUnifyIntent: typeof useUnifyIntent;
-};
-export default _default;
+import * as UnifyIntentClient from '@unifygtm/intent-client';
+export type UnifyIntentClientConfig = UnifyIntentClient.UnifyIntentClientConfig;
+export { default as UnifyIntentProvider } from './UnifyIntentProvider';
+export { default as useUnifyIntent } from './useUnifyIntent';
 //# sourceMappingURL=index.d.ts.map
