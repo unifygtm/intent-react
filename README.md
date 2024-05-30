@@ -6,13 +6,13 @@ Library for using the [Unify Intent JS Client](https://github.com/unifygtm/inten
 
 ### npm
 
-```
+```Shell
 npm install @unifygtm/intent-react
 ```
 
 ### yarn
 
-```
+```Shell
 yarn add @unifygtm/intent-react
 ```
 
@@ -20,7 +20,7 @@ yarn add @unifygtm/intent-react
 
 Wrap your React app in a `UnifyIntentProvider`:
 
-```
+```TSX
 import { UnifyIntentProvider, UnifyIntentClientConfig } from '@unifygtm/intent-react';
 
 const writeKey = 'YOUR_PUBLIC_API_KEY';
@@ -44,7 +44,7 @@ root.render(
 Then, any components rendered in your app can access the intent client
 using the `useUnifyIntent` hook:
 
-```
+```TSX
 import { useUnifyIntent } from '@unifygtm/intent-react';
 
 const SomeComponent = () => {
