@@ -1,6 +1,6 @@
 {
   "name": "@unifygtm/intent-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Library for using the Unify Intent JS Client in a React app.",
   "keywords": [
     "unify",
