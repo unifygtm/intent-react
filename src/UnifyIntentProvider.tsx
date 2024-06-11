@@ -5,11 +5,11 @@ import {
 import React, { PropsWithChildren, useEffect, useState } from 'react';
 
 interface UnifyIntentContextShape {
-  client: UnifyIntentClient | null;
+  client?: UnifyIntentClient | null;
 }
 
 const defaultContext: UnifyIntentContextShape = {
-  client: null,
+  client: undefined,
 };
 
 export const UnifyIntentContext =

@@ -11,7 +11,7 @@ import { UnifyIntentContext } from './UnifyIntentProvider';
 function useUnifyIntent() {
   const { client } = useContext(UnifyIntentContext);
 
-  if (client === null) {
+  if (client === undefined) {
     throw new Error(
       'useUnifyIntent can only be used within a UnifyIntentProvider.',
     );
