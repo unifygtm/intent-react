@@ -2,7 +2,7 @@ import {
   UnifyIntentClient,
   UnifyIntentClientConfig,
 } from '@unifygtm/intent-client';
-import React, { PropsWithChildren, useState } from 'react';
+import React, { PropsWithChildren, useEffect, useState } from 'react';
 
 interface UnifyIntentContextShape {
   client: UnifyIntentClient | null;
@@ -26,9 +26,11 @@ const UnifyIntentProvider = ({
   writeKey,
   config,
 }: UnifyIntentProviderProps) => {
-  const [client] = useState<UnifyIntentClient>(
-    new UnifyIntentClient(writeKey, config),
-  );
+  const [client, setClient] = useState<UnifyIntentClient | null>(null);
+
+  useEffect(() => {
+    setClient(new UnifyIntentClient(writeKey, config));
+  }, []);
 
   return (
     <UnifyIntentContext.Provider value={{ client }}>
