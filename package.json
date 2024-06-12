@@ -28,9 +28,6 @@
   "scripts": {
     "build": "tsx src/build.ts"
   },
-  "dependencies": {
-    "@unifygtm/intent-client": "latest"
-  },
   "peerDependencies": {
     "react": "^16.3.0"
   },
@@ -48,5 +45,8 @@
     "prettier": "^3.2.5",
     "tsx": "^4.11.0",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@unifygtm/intent-client": "^1.0.8"
   }
 }
