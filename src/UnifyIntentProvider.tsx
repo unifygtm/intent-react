@@ -20,38 +20,20 @@ export type UnifyIntentProviderProps = PropsWithChildren<{
   /**
    * The client instance to make available with this provider.
    */
-  client?: UnifyIntentClient;
-
-  /**
-   * @deprecated - you should pass the `client` prop instead
-   */
-  writeKey?: string;
-
-  /**
-   * @deprecated - you should pass the `client` prop instead
-   */
-  config?: UnifyIntentClientConfig;
+  intentClient: UnifyIntentClient;
 }>;
 
 const UnifyIntentProvider = ({
-  client: clientFromProps,
-  writeKey,
-  config,
+  intentClient,
   children,
 }: UnifyIntentProviderProps) => {
-  const [client, setClient] = useState<UnifyIntentClient | null>(clientFromProps ?? null);
+  const [client] = useState<UnifyIntentClient>(intentClient);
 
   useEffect(() => {
-    if (writeKey) {
-      setClient(new UnifyIntentClient(writeKey, config));
-    } else {
-      client?.mount();
-    }
+      client.mount();
 
     return () => {
-      if (!writeKey) {
-        client?.unmount();
-      }
+      client.unmount();
     }
   }, []);
 
