@@ -9,7 +9,7 @@ specifiers:
   '@babel/preset-typescript': ^7.24.6
   '@types/node': ^18.19.33
   '@types/react': ^18.3.3
-  '@unifygtm/intent-client': ^1.0.9
+  '@unifygtm/intent-client': latest
   babel-core: ^7.0.0-bridge.0
   esbuild: ^0.17.19
   prettier: ^3.2.5
@@ -17,7 +17,7 @@ specifiers:
   typescript: ^5.4.5
 
 dependencies:
-  '@unifygtm/intent-client': 1.0.9
+  '@unifygtm/intent-client': 1.0.10
 
 devDependencies:
   '@babel/cli': 7.24.6_@babel+core@7.24.6
@@ -1750,6 +1750,10 @@ packages:
     dev: true
     optional: true
 
+  /@types/js-cookie/3.0.6:
+    resolution: {integrity: sha512-wkw9yd1kEXOPnvEeEV1Go1MmxtBJL0RR79aOTAApecWFVu7w0NNXNqhcWgvw2YgZDYadliXkl14pa3WXw5jlCQ==}
+    dev: false
+
   /@types/node/18.19.33:
     resolution: {integrity: sha512-NR9+KrpSajr2qBVp/Yt5TU/rp+b5Mayi3+OlMlcg2cVCfRmcG5PWZ7S4+MG9PZ5gWBoc9Pd0BKSRViuBCRPu0A==}
     dependencies:
@@ -1767,9 +1771,15 @@ packages:
       csstype: 3.1.3
     dev: true
 
-  /@unifygtm/intent-client/1.0.9:
-    resolution: {integrity: sha512-oa6vJdSKnVnjOJFFkwzHiyWPhnRRV/Ntf/Ot2gzWMaPOy/Hdd5zUzbzvXX2qc93icByDrXfIb8x8MHNBH/0Xcw==}
+  /@types/uuid/9.0.8:
+    resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
+    dev: false
+
+  /@unifygtm/intent-client/1.0.10:
+    resolution: {integrity: sha512-9Z610z0R/isUgz82+H1YKBBDt8vSHzz/M0BXezyX4+ypKFYKpCuuvQz9W1ZyxaM/yul0kduhREANrnOEbmnKZQ==}
     dependencies:
+      '@types/js-cookie': 3.0.6
+      '@types/uuid': 9.0.8
       js-base64: 3.7.7
       js-cookie: 3.0.5
       user-agent-data-types: 0.4.2

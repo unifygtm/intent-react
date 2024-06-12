@@ -30,12 +30,14 @@ const config: UnifyIntentClientConfig = {
   autoIdentify: false,
 };
 
+const intentClient = new UnifyIntentClient(writeKey, config);
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 
 root.render(
-  <UnifyIntentProvider writeKey={writeKey} config={config}>
+  <UnifyIntentProvider intentClient={intentClient}>
     <App />
   </UnifyIntentProvider>
 );

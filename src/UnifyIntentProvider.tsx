@@ -1,6 +1,5 @@
 import {
   UnifyIntentClient,
-  UnifyIntentClientConfig,
 } from '@unifygtm/intent-client';
 import React, { PropsWithChildren, useEffect, useState } from 'react';
 
