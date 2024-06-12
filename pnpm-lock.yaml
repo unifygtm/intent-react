@@ -9,7 +9,7 @@ specifiers:
   '@babel/preset-typescript': ^7.24.6
   '@types/node': ^18.19.33
   '@types/react': ^18.3.3
-  '@unifygtm/intent-client': ^1.0.8
+  '@unifygtm/intent-client': ^1.0.9
   babel-core: ^7.0.0-bridge.0
   esbuild: ^0.17.19
   prettier: ^3.2.5
@@ -17,7 +17,7 @@ specifiers:
   typescript: ^5.4.5
 
 dependencies:
-  '@unifygtm/intent-client': 1.0.8
+  '@unifygtm/intent-client': 1.0.9
 
 devDependencies:
   '@babel/cli': 7.24.6_@babel+core@7.24.6
@@ -1767,8 +1767,8 @@ packages:
       csstype: 3.1.3
     dev: true
 
-  /@unifygtm/intent-client/1.0.8:
-    resolution: {integrity: sha512-XfFMXO+ujvCUqGJSUtIfRXPnHYC3/Z3a7J65EGxfk2j4CBzLe5zlFhxRfnNn9Lzxs3gntCFAUZugRRoyBDkw6A==}
+  /@unifygtm/intent-client/1.0.9:
+    resolution: {integrity: sha512-oa6vJdSKnVnjOJFFkwzHiyWPhnRRV/Ntf/Ot2gzWMaPOy/Hdd5zUzbzvXX2qc93icByDrXfIb8x8MHNBH/0Xcw==}
     dependencies:
       js-base64: 3.7.7
       js-cookie: 3.0.5

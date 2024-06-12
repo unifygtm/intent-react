@@ -47,6 +47,6 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@unifygtm/intent-client": "^1.0.8"
+    "@unifygtm/intent-client": "^1.0.9"
   }
 }
