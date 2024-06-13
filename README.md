@@ -21,7 +21,11 @@ yarn add @unifygtm/intent-react
 Wrap your React app in a `UnifyIntentProvider`:
 
 ```TSX
-import { UnifyIntentProvider, UnifyIntentClientConfig } from '@unifygtm/intent-react';
+import {
+  UnifyIntentClient,
+  UnifyIntentClientConfig,
+  UnifyIntentProvider
+} from '@unifygtm/intent-react';
 
 const writeKey = 'YOUR_PUBLIC_API_KEY';
 
@@ -30,12 +34,14 @@ const config: UnifyIntentClientConfig = {
   autoIdentify: false,
 };
 
+const intentClient = new UnifyIntentClient(writeKey, config);
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 
 root.render(
-  <UnifyIntentProvider writeKey={writeKey} config={config}>
+  <UnifyIntentProvider intentClient={intentClient}>
     <App />
   </UnifyIntentProvider>
 );

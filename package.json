@@ -1,7 +1,6 @@
 {
   "name": "@unifygtm/intent-react",
-  "version": "1.0.1",
-  "type": "module",
+  "version": "1.0.11",
   "description": "Library for using the Unify Intent JS Client in a React app.",
   "keywords": [
     "unify",
@@ -29,11 +28,8 @@
   "scripts": {
     "build": "tsx src/build.ts"
   },
-  "dependencies": {
-    "@unifygtm/intent-client": "latest"
-  },
   "peerDependencies": {
-    "react": "^16.3.0"
+    "react": "^16.3.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.6",
@@ -49,5 +45,8 @@
     "prettier": "^3.2.5",
     "tsx": "^4.11.0",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@unifygtm/intent-client": "latest"
   }
 }
