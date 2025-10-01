@@ -1,6 +1,6 @@
 {
   "name": "@unifygtm/intent-react",
-  "version": "1.6.0",
+  "version": "1.8.0",
   "description": "Library for using the Unify Intent JS Client in a React app.",
   "keywords": [
     "unify",
@@ -47,7 +47,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@unifygtm/intent-client": "^1.6.0"
+    "@unifygtm/intent-client": "^1.8.0"
   },
   "pnpm": {
     "overrides": {

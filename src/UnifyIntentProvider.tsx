@@ -1,6 +1,4 @@
-import {
-  UnifyIntentClient,
-} from '@unifygtm/intent-client';
+import { UnifyIntentClient } from '@unifygtm/intent-client';
 import React, { PropsWithChildren, useEffect, useState } from 'react';
 
 interface UnifyIntentContextShape {
@@ -29,11 +27,11 @@ const UnifyIntentProvider = ({
   const [client] = useState<UnifyIntentClient>(intentClient);
 
   useEffect(() => {
-      client.mount();
+    client.mount();
 
     return () => {
       client.unmount();
-    }
+    };
   }, []);
 
   return (
