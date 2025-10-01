@@ -1,7 +1,5 @@
-import {
-  UnifyIntentClient,
-} from '@unifygtm/intent-client';
-import React, { PropsWithChildren, useEffect, useState } from 'react';
+import { UnifyIntentClient } from '@unifygtm/intent-client';
+import React, { PropsWithChildren, useEffect, useMemo, useState } from 'react';
 
 interface UnifyIntentContextShape {
   client: UnifyIntentClient | null;
@@ -27,17 +25,28 @@ const UnifyIntentProvider = ({
   children,
 }: UnifyIntentProviderProps) => {
   const [client] = useState<UnifyIntentClient>(intentClient);
+  const [_, setIsMounted] = useState<boolean>(false);
 
   useEffect(() => {
-      client.mount();
+    client.mount();
+
+    // Force a re-render after the client mounts
+    setIsMounted(true);
 
     return () => {
       client.unmount();
-    }
+    };
   }, []);
 
+  const value: UnifyIntentContextShape = useMemo(
+    () => ({
+      client,
+    }),
+    [client],
+  );
+
   return (
-    <UnifyIntentContext.Provider value={{ client }}>
+    <UnifyIntentContext.Provider value={value}>
       {children}
     </UnifyIntentContext.Provider>
   );
