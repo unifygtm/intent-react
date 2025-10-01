@@ -1,5 +1,5 @@
 import { UnifyIntentClient } from '@unifygtm/intent-client';
-import React, { PropsWithChildren, useEffect, useMemo, useState } from 'react';
+import React, { PropsWithChildren, useEffect, useState } from 'react';
 
 interface UnifyIntentContextShape {
   client: UnifyIntentClient | null;
@@ -38,15 +38,8 @@ const UnifyIntentProvider = ({
     };
   }, []);
 
-  const value: UnifyIntentContextShape = useMemo(
-    () => ({
-      client,
-    }),
-    [client],
-  );
-
   return (
-    <UnifyIntentContext.Provider value={value}>
+    <UnifyIntentContext.Provider value={{ client }}>
       {children}
     </UnifyIntentContext.Provider>
   );
