@@ -25,13 +25,9 @@ const UnifyIntentProvider = ({
   children,
 }: UnifyIntentProviderProps) => {
   const [client] = useState<UnifyIntentClient>(intentClient);
-  const [_, setIsMounted] = useState<boolean>(false);
 
   useEffect(() => {
     client.mount();
-
-    // Force a re-render after the client mounts
-    setIsMounted(true);
 
     return () => {
       client.unmount();
