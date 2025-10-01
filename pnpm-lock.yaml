@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       '@unifygtm/intent-client':
-        specifier: ^1.5.0
-        version: 1.5.0
+        specifier: ^1.6.0
+        version: 1.6.0
       react:
         specifier: ^16.3.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
         version: 16.3.0
@@ -970,8 +970,8 @@ packages:
   '@types/uuid@9.0.8':
     resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
 
-  '@unifygtm/intent-client@1.5.0':
-    resolution: {integrity: sha512-PWq8CkzaUvhJ3ueU6iGS8XKGk/mUjsDvlFE8JEDytHzVDF5x4U+NrczptlcVIr7e8e/uqrJN0hMMUd1jblTGJQ==}
+  '@unifygtm/intent-client@1.6.0':
+    resolution: {integrity: sha512-aU8FSYdi6rFP9vimoKqb7ulLVpF1ekin6rQl3BVdrlFCxLYJ1dlWzHEXNqdLjH5/LgcCH678DSzlgfKsfRv1Ug==}
 
   ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
@@ -2393,7 +2393,7 @@ snapshots:
 
   '@types/uuid@9.0.8': {}
 
-  '@unifygtm/intent-client@1.5.0':
+  '@unifygtm/intent-client@1.6.0':
     dependencies:
       '@types/js-cookie': 3.0.6
       '@types/uuid': 9.0.8
