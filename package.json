@@ -19,6 +19,13 @@
   "main": "./dist/js/index.cjs.js",
   "module": "./dist/js/index.esm.js",
   "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/js/index.esm.js",
+      "require": "./dist/js/index.cjs.js",
+      "types": "./src/index.d.ts"
+    }
+  },
   "nodemonConfig": {
     "watch": [
       "./src/"
