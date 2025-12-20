@@ -1,6 +1,6 @@
 {
   "name": "@unifygtm/intent-react",
-  "version": "1.8.0",
+  "version": "1.9.5",
   "description": "Library for using the Unify Intent JS Client in a React app.",
   "keywords": [
     "unify",
@@ -19,6 +19,13 @@
   "main": "./dist/js/index.cjs.js",
   "module": "./dist/js/index.esm.js",
   "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/js/index.esm.js",
+      "require": "./dist/js/index.cjs.js",
+      "types": "./src/index.d.ts"
+    }
+  },
   "nodemonConfig": {
     "watch": [
       "./src/"
@@ -47,7 +54,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@unifygtm/intent-client": "^1.8.0"
+    "@unifygtm/intent-client": "^1.9.5"
   },
   "pnpm": {
     "overrides": {
