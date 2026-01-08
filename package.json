@@ -14,7 +14,7 @@
     "name": "Solomon Astley",
     "email": "solomon@unifygtm.com"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": false,
   "main": "./dist/js/index.cjs.js",
   "module": "./dist/js/index.esm.js",
